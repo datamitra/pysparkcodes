@@ -29,10 +29,10 @@ packagecount = ss.sql("select package, count(1) packagecount from cran_dl_log gr
 for package in packagecount:
     print("Package Name: %s\tDownloadCount: %i" % (package['package'], int(package['packagecount'])))
 
-os_count = df.select("r_os").distinct().orderBy("r_os").collect()
+#os_count = df.select("r_os").distinct().orderBy("r_os").collect()
 
-for ros in os_count:
-    print(ros['r_os'])
+#for ros in os_count:
+#    print(ros['r_os'])
 
 #pdf = df.groupBy("package").count().toPandas()
 
