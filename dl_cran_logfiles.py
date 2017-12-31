@@ -14,7 +14,7 @@ for y in range(2013,2018):
                 dstr = str(d)
             url = "http://cran-logs.rstudio.com/" \
                   + ystr + "/" + ystr + "-" + mstr + "-" + dstr + "-r.csv.gz"
-            fn = "data/" + ystr + "-" + mstr + "-" + dstr + "-r.csv.gz"
+            fn = "data/rdownload/" + ystr + "-" + mstr + "-" + dstr + "-r.csv.gz"
             try:
                 urllib.request.urlretrieve(url, fn)
             except:
